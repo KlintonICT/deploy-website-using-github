@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>វិធី Deploy Website ដោយប្រើ​ Github Pages</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel= "shortcut icon" href = "images/47242b76-1509-4672-babc-e5fc7317822f.png" />
+    </head>
+    <body>
+        <div class="develop-logo">
+            <img src="./images/4525b426-688c-45a1-aee1-b88fbcf181f5.png" alt="developer logo">
+        </div>
+        <div class="container">
+            <h1 class="title">វិធី Deploy Website ដោយប្រើ​ Github Pages</h1>
+            <div class="profile">
+                <img src="./images/49627716_742127529492138_6102634007713808384_n.jpg" alt="own profile" class="pro-img">
+                <div class="profile-des">
+                    <span>Klinton C.</span>
+                    <span>04 April 2019</span>
+                </div>
+            </div>
+            <img src="./images/ghtraining.png" class="img1">
+            <div class="para1">
+                <span>
+                    ជាធម្មតានៅពេលដែលយើងបង្កើត Website ខ្លួនឯងហើយចង់អោយ​អ្នកដ៏ទៃបានឃើញ website​ របស់យើង យើងត្រូវ Deploy Website
+                    ឡើងទៅ Hosting ជាមុនសិន​ ហើយការ Deploy នេះ​មានទាំងត្រូវបង់ប្រាក់ និងហ្រ្វី។​ ប៉ុន្តែការប្រើរបស់ហ្វ្រីគឺមានចំនួនកំណត់ ដូចជា អោយ
+                    space តូច រឺបានត្រឹមតែ subdomain។
+                </span><br><br>
+                <span>
+                    ហើយក្នុងករណីដែលយើងចង់មាន website សម្រាប់ខ្លួនឯង ហើយខ្វះខាតដើមទុនតើត្រូវធ្វើដូចម្តេច? វិធីងាយស្រួលដែលចង់មកនែនាំនៅពេលនេះគឺ Github Pages។
+                </span>
+            </div>
+            <h2 class="subtitle1">Sample Website ដែលប្រើ​ Github Pages</h2>
+            <img src="./images/electron.png" class="img1">
+            <img src="./images/facebookdesign.png" class="img1">
+            <img src="./images/ghtraining.png" class="img1">
+            <img src="./images/microsoft.png" class="img1">
+            <img src="./images/semanticui.png" class="img1">
+            <img src="./images/yeoman.png" class="img1">
+            <div class="para1">
+                <span>
+                    Website ផ្សេងៗដែលប្រើ Github Pages អាចចូលមើលបន្ថែមបាន: 
+                    <a href="https://github.com/collections/github-pages-examples" class="link">
+                        GitHub Pages examples
+                    </a>
+                </span>
+            </div>
+            <h2 class="subtitle1">អ្វីដែលយើងគួរមាន</h2>
+            <div class="para2">
+                <ul>
+                    <li>អាចសរសេរ HTML/CSS/JavaScript</li>
+                    <li>មានចំណេះដឹងក្នុងការប្រើប្រាស់ Git/Github</li>
+                </ul>
+            </div>
+            <h2 class="subtitle1">របៀបប្រើប្រាស់ Github Pages</h2>
+            <div class="para2">
+                <span>
+                    យើងអាច Deploy website ដោយប្រើ Github Pages ដោយវិធី២យ៉ាង​គឺ ការបង្កើត Git Repository
+                    បែប User និង Project។
+                </span>
+            </div>
+            <h3 class="subtitle2">1. បែប User</h3>
+            <div class="para2">
+                <span>
+                    Create Git Repo ដោយសរសេរឈ្មោះដែលយើងពេញចិត្ត រឺក៏ឈ្មោះខ្លួនឯង &lt;USERNAME&gt;.github.io
+                </span><br><br>
+                <span>
+                    ឧទាហរណ៍ User ដែលប្រើ Github ខាងក្រោមឈ្មោះ devahoy។​ ដូច្នេះនៅពេលដែល create New Repository
+                    គាត់អាចសរសេរថា devahoy.github.io ជាដើម។
+                </span>
+            </div>
+            <img src="./images/create-new-repo.png" class="img1">
+            <div class="para2">
+                <span>
+                    បន្ទាប់មកធ្វើការ Clone repository ចូលទៅក្នុងកុំព្យូទ័រផ្ទាល់ខ្លួនរបស់យើង។
+                </span>
+            </div>
+            <div class="highlight"><pre><code>git clone <a href="https://github.com/username/username.github.io" rel="nofollow" style="color:yellow; text-decoration: none"><span>https</span><span>://</span><span>github</span><span>.</span><span>com</span><span>/</span><span>username</span><span>/</span><span>username</span><span>.</span><span>github</span><span>.</span><span>io</span></a></code></pre></div>
+            <div class="para2">
+                <span>
+                    បន្ទាប់មកទៀតយើងធ្វើការ create file ឈ្មោះ index.html រឺក៏ បើសិនជាមាន website (static website) យើងអាច
+                    copy and paste នៅក្នុង repo មួយនេះ ហើយធ្វើការ commit & push ក្នុង github តែម្តងក៏បាន។
+                </span><br><br>
+                <span>
+                    File index.html
+                </span>
+            </div>
+            <div class="highlight">
+                <pre style="margin-left: -110px"><code>
+                <span style="font-style:italic; color: lightgreen">&lt;!DOCTYPE html&gt;</span>
+                <span style="color:orange">&lt;html&gt;</span>
+                  <span style="color:orange">&lt;head&gt;</span>
+                    <span style="color:orange">&lt;title&gt;</span>Hello Github Pages<span style="color:orange">&lt;/title&gt;</span>
+                  <span style="color:orange">&lt;/head&gt;</span>
+                  <span style="color:orange">&lt;body&gt;</span>
+                    <span style="color:orange">&lt;h1&gt;</span>Hello Github Pages<span style="color:orange">&lt;/h1&gt;</span>
+                  <span style="color:orange">&lt;/body&gt;</span>
+                <span style="color:orange">&lt;/html&gt;</span>
+                </code></pre>
+            </div>
+            <div class="para2">
+                <span>Commit and push to github pages</span>
+            </div>
+            <div class="highlight">
+                <pre style="margin-left: -110px"><code>
+                git add index.html
+                git commit <span class="nt" style="color:orange">-m</span> <span class="s2" style="color:yellow">"add index page"</span>
+                git push <span class="nt" style="color:orange">-u</span> origin master
+                </code></pre>
+            </div>
+            <div class="para2">
+                <span>
+                    ពេល push រួចហើយ​យើងអាចចូល website ផ្ទាល់ខ្លួនរបស់យើងតាមរយៈ
+                    <a href="https://username.github.io" style="text-decoration: none" class="link">https://username.github.io</a>
+                    ជាការស្រេច។
+                </span>
+                <blockquote style="margin-top: 3%"> 
+                    <p>សម្រាប់អ្នកដែលមិនធ្លាប់ប្រើ Command Line អាចចូលមើល GUI Github for Windows/Mac តាមរយៈ link នេះ <a href="https://pages.github.com/"​ class="link"><span>https</span><span>://</span><span>pages</span><span>.</span><span>github</span><span>.</span><span>com</span><span>/</span></a></p> 
+                </blockquote>
+            </div>
+            <h3 class="subtitle2">2. បែប Project</h3>
+            <div class="para2">
+                <span>
+                    សម្រាប់បែប Project​ មិនបានកំណត់ច្បាស់លាស់ថាត្រូវប្រើឈ្មោះអោយដូច​ Username រឺអត់ទេ ប៉ុន្តែយើងនឹងប្រើវិធីកំណត់ branch តែម្តង។​ ដោយការកំណត់ branch
+                    អាចធ្វើដោយវិធី២យ៉ាង បង្កើត branch វាដោយខ្លួនឯង និង នៅត្រង់ Github មាន Setting សម្រាប់អោយយើង generate​ ។ 
+                </span>
+            </div>
+            <h3 class="subtitle3">វិធី Generate​</h3>
+            <div class="para2">
+                បន្ទាប់ពី create New repository ចុចចូលទៅក្នុង project​ ដែលបានបង្កើត ហើយចុច <i>Settings</i> បន្ទាប់មកមើលទៅក្រោមយើងនឹងឃើញ <i>Github Pages</i>
+                ហើយចុច <i>Choose a theme</i>
+            </div>
+            <img src="./images/launch-theme-chooser.png" class="img1" style="margin-top: -2%; margin-bottom: 5%">
+            <div class="para2">
+                <span>ធ្វើការជ្រើសរើស Theme ដែលចង់បាន</span>
+            </div>
+            <img src="./images/select-theme.png" class="img1" style="margin-top: -2%; margin-bottom: 5%">
+            <div class="para2">
+                <span>
+                    បន្ទាប់មកយើងអាចបន្ថែម content ផ្សេងៗនៅក្នុង file <code class="readme">README.md</code> រួចហើយ Commit ។​ <br><br>
+                    ចុងក្រោយយើងនឹងបាន domain website ផ្ទាល់ខ្លួនរបស់យើងដោយចូលតាម link 
+                    <a href="https://username.github.io/PROJECT_NAME" class="link">https://username.github.io/PROJECT_NAME</a>
+                </span>
+            </div>
+            <h3 class="subtitle3">វិធីបង្កើត branch​ ដោយខ្លួនឯង</h3>
+            <div class="para2">
+                <span>
+                    ការបង្កើត branch​ ខ្លួនឯងដោយមិនបានប្រើ Generate យើងត្រូវកណត់ branch ដែលយើងចង់បានទៅលើ Github Pages ដើម្បីអោយដឹងថា branch
+                    មួយណាដែលយើងចង់អោយ render ជា website របស់យើង​។​ <br><br>
+                    ដូច្នេះនៅក្នុង repository របស់យើង​ សាកល្បងដោយការបង្កើត file <code class="readme">index.html</code> ហើយ push ចូលទៅក្នុង branch proj​ect របស់យើង។
+                </span>
+            </div>
+            <div class="highlight">
+                <pre style="margin-left: -110px"><code>
+                <span style="font-style:italic; color: lightgreen">&lt;!DOCTYPE html&gt;</span>
+                <span style="color:orange">&lt;html&gt;</span>
+                  <span style="color:orange">&lt;head&gt;</span>
+                    <span style="color:orange">&lt;title&gt;</span>Hello Github Pages<span style="color:orange">&lt;/title&gt;</span>
+                  <span style="color:orange">&lt;/head&gt;</span>
+                  <span style="color:orange">&lt;body&gt;</span>
+                    <span style="color:orange">&lt;h1&gt;</span>Hello Github Pages<span style="color:orange">&lt;/h1&gt;</span>
+                  <span style="color:orange">&lt;/body&gt;</span>
+                <span style="color:orange">&lt;/html&gt;</span>
+                </code></pre>
+            </div>
+            <div class="para2">
+                <span>
+                    នៅក្នុង repository របស់យើងចុច Settings បន្ទាប់មកនៅត្រង់ Github Pages ជ្រើសរើស Source branch ដែលយើងចង់បាន​​ ។​
+                </span>
+            </div>
+            <img src="./images/source-setting.png" class="img1" style="margin-top: -2%; margin-bottom: 5%">
+            <div class="para2">
+                <span>
+                    រួចហើយយើងនឹងបាន website ផ្ទាល់ខ្លួនរបស់យើងដោយមាន​ url 
+                    <a href="https://username.github.io/PROJECT_NAME" class="link">https://username.github.io/PROJECT_NAME</a>
+                </span>
+            </div>
+            <h2 class="subtitle1">References</h2>
+            <div class="para2">
+                <ul>
+                    <li><a href="https://pages.github.com/" class="link">Github Pages</a></li>
+                    <li><a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/" class="link">Custom domain Github Pages</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <span>Built with <i class="fa fa-heart" style="color:lightblue"></i> by Klinton C.</span>
+        </div>
+    </body>
+</html>

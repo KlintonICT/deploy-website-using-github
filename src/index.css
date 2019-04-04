@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Battambang');
+
+body{
+    font-family: 'Battambang', cursive;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 4%;
+}
+.develop-logo{
+    width: 100%;
+    text-align: center;
+}
+.container{
+    margin-top: 2%;
+    padding-top: 4%;
+    width: 100%;
+    padding-bottom: 1%;
+    box-shadow: 0 0px 100px rgba(0,0,0,0.15); 
+}
+.title{
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: center;
+    font-size: 3em;
+}
+.profile{
+    margin-left: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+.pro-img{
+    margin-right: 14px;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+}
+.profile-des{
+    display: flex;
+    flex-direction: column;
+}
+.img1{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+.para1{
+    margin-left: 5%;
+    margin-top: 7%;
+    width: 90%;
+    margin-bottom: 7%;
+}
+.subtitle1{
+    margin-left: 5%;
+    font-size: 2em;
+    margin-bottom: 3%;
+}
+.para2{
+    margin-top: -2%;
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 5%;
+}
+.subtitle2{
+    margin-left: 5%;
+    font-size: 1.5em;
+    margin-bottom: 3%;
+}
+ .highlight{
+    width: 90%;
+    margin-top: -2%;
+    margin-left: 3%;
+    color: #faf6e4;
+    background-color: #122b3b;
+    border-radius: .25rem;
+    margin-bottom: 5%;
+}
+pre>code {
+    display: block;
+    padding : 1rem;
+    white-space: pre-wrap;
+    font-size: 14px;
+}
+blockquote{
+    margin: 0;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-left: 5px solid #1464f9;
+    font-style: italic;
+}
+.subtitle3{
+    margin-left: 5%;
+    font-size: 1.3em;
+    margin-bottom: 3%;
+}
+.readme{
+    padding: .25rem .75rem;
+    margin: .25rem;
+    background-color: #f5f4f5;
+    color: #333;
+    border-radius: .25rem;
+    overflow: auto;
+    white-space: pre-wrap;
+}
+.link{
+    color: black;
+}
+.link:hover{
+    color: blue;
+}
+.footer{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+@media screen and (max-width:576px){
+     .container{
+        box-shadow: 0px 0px;
+    } 
+    .footer{
+        margin-top: 7%;
+    }
+    .highlight{
+        width: 95%;
+    }
+}
