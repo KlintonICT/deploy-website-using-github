@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Battambang');
 
 body{
-    font-family: 'Battambang', cursive;
+    font-family: 'Battambang', cursive, Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -72,7 +72,7 @@ body{
     font-size: 1.5em;
     margin-bottom: 3%;
 }
- .highlight{
+.highlight{
     width: 90%;
     margin-top: -2%;
     margin-left: 3%;
@@ -81,12 +81,23 @@ body{
     border-radius: .25rem;
     margin-bottom: 5%;
 }
-pre>code {
-    display: block;
-    padding : 1rem;
-    white-space: pre-wrap;
-    font-size: 14px;
+.highlight > .code{
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    font-family: monospace;
 }
+.highlight > .htmlInit{
+    padding: 5%;
+    font-family: monospace;
+}
+.highlight > .code a{
+    overflow: break-word;
+    word-wrap: break-word;
+    color: yellow;
+    text-decoration: none;
+}
+
 blockquote{
     margin: 0;
     padding: 1em;
@@ -129,5 +140,11 @@ blockquote{
     }
     .highlight{
         width: 95%;
+    }
+    .highlight > .code{
+        padding-left: 5%;
+        padding-top: 2%;
+        padding-bottom: 3%;
+        padding-right: 5%;
     }
 }
